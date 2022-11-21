@@ -18,7 +18,7 @@ class GamesController < ApplicationController
       @answer = "Sorry but #{@word} does not seem to be an valid english word"
       end
     else
-    @answer = "sorry but #{word} cannot be built of of #{@grid}"
+    @answer = "sorry but #{@word} cannot be built of #{@grid}"
     end
   end
 

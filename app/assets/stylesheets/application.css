@@ -16,7 +16,7 @@
 
 
 .text-bg-dark {
-    color: #fff!important;
+    color: #fff;
     background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
 }
 
@@ -34,6 +34,9 @@
   margin-top: 30px;
 }
 
-.banner{
-  background-image: ;
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  opacity: 0.25;
 }

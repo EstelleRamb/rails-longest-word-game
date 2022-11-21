@@ -1,18 +1,20 @@
 
-<div class="banner></div>
+<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1605429201125-37e867327609?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80");"></div>
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <div class="title text-center card-title cover-container"><h1>Longest word game </h1></div>
+  <div class=" cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="title text-center card-title cover-container"><h1>Longest word game </h1></div>
 
-  <div class=" grid text-center card-title mb-auto"><%=@grid.join("")%></div>
 
-  <p class="text-center ">What is the longest word you can find?</p>
+    <div class=" grid text-center card-title mb-auto"><%=@grid.join(".")%></div>
 
-  <div>
-    <form action="/score" method="POST" data-turbo="false">
-      <input class="" type="text" name="word" placeholder="your word" value="<%=params[:word]%>">
-      <input type="submit" value="Play" class="btn btn-primary">
-      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-    </form>
+    <p class="text-center ">What is the longest word you can find?</p>
+
+
+    <div>
+      <form action="/score" method="POST" data-turbo="false">
+        <input type="text" name="word" placeholder="your word" value="<%=params[:word]%>">
+        <input class="link" type="submit" value="Play" class="btn btn-lg btn-secondary fw-bold border-white bg-white">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      </form>
+    </div>
   </div>
-</div>
