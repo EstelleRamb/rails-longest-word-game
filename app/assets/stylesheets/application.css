@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+
+.text-bg-dark {
+    color: #fff!important;
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+}
+
+.grid{
+  font-size: 40px;
+  letter-spacing: 15px;
+  margin: 40pxx;
+}
+.link > a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.link{
+  margin-top: 30px;
+}
+
+.banner{
+  background-image: ;
+}
